@@ -1,0 +1,31 @@
+/* ----------- Modern CSS reset by Josh Comeau ------------- */
+/* https://www.joshwcomeau.com/css/custom-css-reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: calc(1em + 0.5rem);
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button {
+  font: inherit;
+  font-size: 100%;
+}
+
+p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+  text-wrap: pretty;
+}
+
+/* ------------------- End of reset ------------------------ */
