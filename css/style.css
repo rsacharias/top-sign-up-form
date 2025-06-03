@@ -1,7 +1,11 @@
 :root {
+  --bg-clr-body: #000;
+  --bg-clr-main: #fff;
+
   --logo-clr: #fff;
-  --logo-width: 700px;
+  --logo-width: 600px;
   --form-text-clr: #000;
+  --form-padding-left: 50px;
 }
 
 /* ----------- Modern CSS reset by Josh Comeau ------------- */
@@ -48,13 +52,23 @@ p {
   font-style: normal;
 }
 
+
 body {
+  background-color: var(--bg-clr-body);
   min-height: 100vh;
+}
+
+.container {
+  max-width: 80%;
+  min-height: 100vh;
+  background-color: var(--bg-clr-main);
+  margin: 0 auto;
   display: flex;
 }
 
 .image-logo {
-  background: no-repeat left/var(--logo-width) url("../img/leaves-background.jpg");
+  flex-shrink: 0;
+  background: no-repeat left/cover url("../img/leaves-background.jpg");
   width: var(--logo-width);
   color: var(--logo-clr);
   display: flex;
@@ -83,7 +97,41 @@ body {
   margin-bottom: 20px;
 }
 
-main {
-  max-width: 50%;
-  /* margin-left: auto; */
+form .intro p {
+  font-size: 2rem;
+}
+
+form .intro p {
+  margin-bottom: 30px;
+  padding: 100px 100px 0 var(--form-padding-left);
+}
+
+.widgets {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0 0 var(--form-padding-left);
+}
+
+.form-row {
+  display: flex;
+  gap: 100px;
+}
+
+.widget {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: -21px;
+}
+
+.submit-section {
+  padding: 50px 0 0 var(--form-padding-left);
+}
+
+.submit-section button {
+  margin-bottom: 20px;
 }
