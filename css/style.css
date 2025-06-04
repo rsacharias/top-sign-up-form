@@ -99,37 +99,42 @@ body {
   margin-bottom: 20px;
 }
 
-form .intro {
+p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+form .intro-section {
   padding: 150px 50px 20px var(--form-padding-left);
 }
 
-form .intro p {
-  font-size: 1.6rem;
-  font-weight: 600;
+form .intro-section p {
   margin-bottom: 50px;
 }
 
-.widgets {
-  height: 300px;
+.widget-section {
+  min-height: 300px;
   background-color: var(--bg-clr-2);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 20px 0 40px var(--form-padding-left);
 }
 
-.form-row {
-  display: flex;
-  gap: 100px;
+.widget-section p {
+  margin-bottom: 40px;
 }
 
-.widget {
+.widgets {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.widget-element {
   position: relative;
 }
 
 label {
   position: absolute;
-  top: -21px;
+  top: -24px;
 }
 
 .submit-section {
