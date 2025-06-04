@@ -23,7 +23,7 @@
 }
 
 body {
-  line-height: calc(1em + 0.5rem);
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -55,6 +55,7 @@ p {
 
 
 body {
+  font-family: system-ui, sans-serif;
   background-color: var(--bg-clr-body);
   min-height: 100vh;
 }
@@ -98,13 +99,14 @@ body {
   margin-bottom: 20px;
 }
 
-form .intro p {
-  font-size: 2rem;
+form .intro {
+  padding: 150px 50px 20px var(--form-padding-left);
 }
 
 form .intro p {
-  margin-bottom: 30px;
-  padding: 100px 100px 0 var(--form-padding-left);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 50px;
 }
 
 .widgets {
@@ -113,7 +115,7 @@ form .intro p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 0 0 var(--form-padding-left);
+  padding: 20px 0 40px var(--form-padding-left);
 }
 
 .form-row {
