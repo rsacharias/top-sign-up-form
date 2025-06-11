@@ -1,89 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>TOP: Sign-Up-Form</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="image-logo">
-      <div class="logo">
-        <img src="img/odin-lined.png" height="180px" alt="Logo of The Odin Project">
-        <div class="logo-text">ODIN</div>
-      </div>
-      <div class="credits">
-        Photo by
-        <a
-          href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TOP: Sign-Up-Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-logo">
+        <div class="logo">
+          <img src="img/odin-lined.png" height="180px" alt="Logo of The Odin Project">
+          <div class="logo-text">ODIN</div>
+        </div>
+        <div class="credits">
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie
           West</a>
-        on
-        <a
-          href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+          on
+          <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </div>
       </div>
-    </div>
-    <main>
-      <form action="#" method="get">
-        <section class="intro">
-          <p>
-            This is not a real online service!
+      <main>
+        <form action="#" method="get">
+          <section class="intro-section">
+            <p>
+              This is not a real online service!
             You know you need something like this in your life to help you realize your
             deepest dreams. Sign up
-            <em>now</em>
-            to get started.
-          </p>
-          <p>
-            You know you want to.
-          </p>
-        </section>
-        <section class="widgets">
-          <p>
-            Let's do this!
-          </p>
-          <div class="form-row">
-            <div class="widget">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name">
+              <em>now</em>
+              to get started.
+            </p>
+            <p>
+              You
+              <em>know</em>
+              you want to.
+            </p>
+          </section>
+          <section class="widget-section">
+            <p>
+              Let's do this!
+            </p>
+            <div class="widgets">
+              <div class="widget-element">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required placeholder="Jane" minlength="2" maxlength="80">
+              </div>
+              <div class="widget-element">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required placeholder="Doe" minlength="2" maxlength="80">
+              </div>
+              <div class="widget-element">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="example@email.org">
+              </div>
+              <div class="widget-element">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" name="phone-number">
+              </div>
+              <div class="widget-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="" minlength="8">
+              </div>
+              <div class="widget-element">
+                <label for="password-confirm">Confirm Password</label>
+                <input type="password" id="password-confirm" name="password-confirm" required placeholder="" minlength="8">
+              </div>
             </div>
-            <div class="widget" p>
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="last-name">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="widget">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email">
-            </div>
-            <div class="widget">
-              <label for="phone-number">Phone Number</label>
-              <input type="tel" id="phone-number" name="phone-number">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="widget">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password">
-            </div>
-            <div class="widget">
-              <label for="password-confirm">Confirm Password</label>
-              <input type="password" id="password-confirm" name="password-confirm">
-            </div>
-          </div>
-        </section>
-        <section class="submit-section">
-          <button type="submit">Create Account</button>
-          <p class="submit">
-            Already have an account?
-            <a href="#">Log in</a>
-          </p>
-        </section>
-      </form>
-    </main>
-  </div>
-</body>
-
+          </section>
+          <section class="submit-section">
+            <button type="submit">Create Account</button>
+            <p class="submit">
+              Already have an account?
+              <a href="#">Log in</a>
+            </p>
+          </section>
+        </form>
+      </main>
+    </div>
+  </body>
 </html>
