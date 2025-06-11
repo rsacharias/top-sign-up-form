@@ -163,3 +163,21 @@ input:focus {
 .submit-section {
   padding: 50px 0 0 var(--form-padding-side);
 }
+
+.submit-section button {
+  background-color: green;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.submit-section a {
+  color: green;
+  font-weight: 700;
+  text-decoration: none;
+}
