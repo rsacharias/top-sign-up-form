@@ -3,10 +3,17 @@
   --bg-clr-1: #e3f6f5;
   --bg-clr-2: #fff;
 
+  --input-border-clr: #bae8e8;
+
   --logo-clr: #fff;
   --logo-width: 600px;
   --form-text-clr: #000;
-  --form-padding-left: 50px;
+  --form-padding-side: 50px;
+
+  /* --focus-outline-clr: currentColor; */
+  /* --focus-outline-offset: 0.1rem; */
+  /* --focus-outline-style: solid; */
+  /* --focus-outline-width: 2px; */
 }
 
 /* ----------- Modern CSS reset by Josh Comeau ------------- */
@@ -105,7 +112,7 @@ p {
 }
 
 form .intro-section {
-  padding: 150px 50px 20px var(--form-padding-left);
+  padding: 150px var(--form-padding-side) 20px var(--form-padding-side);
 }
 
 form .intro-section p {
@@ -113,9 +120,8 @@ form .intro-section p {
 }
 
 .widget-section {
-  min-height: 300px;
   background-color: var(--bg-clr-2);
-  padding: 20px 0 40px var(--form-padding-left);
+  padding: 20px var(--form-padding-side) 40px var(--form-padding-side);
 }
 
 .widget-section p {
@@ -137,10 +143,23 @@ label {
   top: -24px;
 }
 
-.submit-section {
-  padding: 50px 0 0 var(--form-padding-left);
+input {
+  border: 2px solid var(--input-border-clr);
+  border-radius: 3px;
 }
 
-.submit-section button {
-  margin-bottom: 20px;
+/* https://css-tricks.com/snippets/css/form-validation-styling-on-input-focus/ */
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+input:focus {
+  --box-clr: blue;
+  outline: 1px solid var(--box-clr);
+  border-color: transparent;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.submit-section {
+  padding: 50px 0 0 var(--form-padding-side);
 }
